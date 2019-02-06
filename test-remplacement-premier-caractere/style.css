@@ -1,0 +1,41 @@
+fieldset {
+  border:none;
+}
+.controle label {
+  margin-top:20px;
+}
+.controle input[type="text"], fieldset :nth-child(3){
+  display : block;
+}
+
+.underControl label,.underControl input {
+  display:none;
+  position:relative;
+  /* top:-20px; */
+}
+
+.underControl label, .underControl input{
+  position:relative;
+  -webkit-transition:all 1s;
+  transition:all 5s;
+}
+
+.underControl label, .underControl input{
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    top: -50px;
+    opacity:0;
+  }
+  50% {
+    opacity:0.15;
+  }
+  to {
+    top: 0px;
+    opacity:1;
+  }
+}
+
